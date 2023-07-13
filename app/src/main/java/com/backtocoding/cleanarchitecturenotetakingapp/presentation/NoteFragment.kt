@@ -23,6 +23,8 @@ class NoteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.checkButton.setOnClickListener { Navigation.findNavController(it).popBackStack() }
+        binding.checkButton.setOnClickListener {
+            Navigation.findNavController(it).popBackStack()
+        }
     }
 }

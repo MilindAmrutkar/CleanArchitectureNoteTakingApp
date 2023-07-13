@@ -6,6 +6,10 @@ import com.backtocoding.cleanarchitecturenotetakingapp.framework.db.NoteEntity
 import com.backtocoding.core.data.Note
 import com.backtocoding.core.repository.NoteDataSource
 
+/*
+*   Here we connect the database DatabaseService
+*   with the Repository inside the core module.
+*/
 class RoomNoteDataSource(context: Context) : NoteDataSource {
     val noteDao = DatabaseService.getInstance(context).noteDao()
 
